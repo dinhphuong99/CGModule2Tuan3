@@ -1,0 +1,6 @@
+hoa,1-1-1999,Female
+hằng,2-2-1999,Female
+hiền,4-2-1999,Female
+hải,1-2-1999,Male
+hùng,3-2-1999,Male
+nhân,5-2-1999,Male
