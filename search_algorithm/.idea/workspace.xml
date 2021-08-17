@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac9ac7ef-c0c0-4644-9cc5-feec8ad52cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exercise/FindTheLongestString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/opitional/AlgorithmComplexityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/opitional/longestConsecutiveSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,5 +115,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
