@@ -3,9 +3,19 @@ package exercise;
 import java.util.Scanner;
 
 public class Triangle {
-    public Triangle(double side1, double side2, double side3) throws IllegalTriangleException {
-        if (side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1)//(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) --> là 1 tam giác
-            throw new IllegalTriangleException("Not a triangle.");
+    public double side1;
+    public double side2;
+    public double side3;
+
+    public Triangle(double side1, double side2, double side3) throws IllegalTriangleException{
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+
+        if (this.side1 + this.side2 <= this.side3 || this.side1 + this.side3 <= this.side2
+                || this.side2 + this.side3 <= this.side1 || this.side1 <= 0
+                || this.side2 <= 0 && this.side3 <= 0)
+            throw new IllegalTriangleException("Not a triangle");
         else
             System.out.println("Is a triangle");
     }
@@ -19,11 +29,8 @@ public class Triangle {
         System.out.println("Enter value of side3: ");
         double side3 = scanner.nextDouble();
         try {
-            if (side1 <= 0 || side2 <= 0 || side3 <= 0 ){
-                System.out.println("Wrong side's value!");
-            }
             Triangle obj = new Triangle(side1,side2,side3);
-        } catch (Exception m) {
+        } catch (IllegalTriangleException m) {
             System.out.println("Exception occurred: " + m);//Ngoại lệ xảy ra
         }
     }
